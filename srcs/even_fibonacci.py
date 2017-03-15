@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 """even_fibonacci.py
 
@@ -12,6 +13,7 @@ __author__ = "jraleman"
 __email__ = "jraleman@bendiburg.com"
 __date__ = "2016-12-04"
 
+# Function to find the sum of the even value from the Fibonacci sequence.
 def even_fibonacci(max_value):
     fibbonacci_sum = 0;
     last_term = 1;
@@ -25,4 +27,14 @@ def even_fibonacci(max_value):
         current_term = next_term
     return fibbonacci_sum
 
-print even_fibonacci(float(raw_input("Insert max value of fibonacci sum: ")))
+# Prints problem title.
+print ("\nProblem 2: Even Fibonacci numbers")
+
+# Asks for user input (an integer).
+# On error, shows a message to the user.
+try:
+    print even_fibonacci(int(raw_input("Insert max value of fibonacci sum: ")))
+except ValueError:
+    print ("Enter an integer, please! (╯°□°）╯")
+except:
+    pass
