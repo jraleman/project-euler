@@ -13,4 +13,5 @@ __all__ = [
     "multiples_sum",
     "even_fibonacci",
     "largest_prime_factor",
+    "largest_palindrome",
 ]
